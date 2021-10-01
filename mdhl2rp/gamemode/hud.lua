@@ -24,7 +24,7 @@ function hud()
         draw.SimpleText(client:GetActiveWeapon():GetPrintName(), "DermaDefaultBold", 260, ScrH() - 60, Color(255,255,255, 255), 0, 0)
     end
     if (client:GetActiveWeapon():Clip1() != -1) then
-        draw.SimpleText("Ammo: " .. client:GetActiveWeapon())
+        draw.SimpleText("Ammo: " .. client:GetActiveWeapon():Clip1() .. "/" .. client:GetAmmoCount(client:GetActiveWeapon():GetPrimaryAmmoType()), "DermaDefaultBold", 260, ScrH() - 40, Color(255, 255, 255, 255), 0, 0)
     end
 end
 hook.Add("HUDPaint", "TestHud", hud)
