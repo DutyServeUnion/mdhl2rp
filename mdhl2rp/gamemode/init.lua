@@ -34,3 +34,15 @@ end
 --function GM:PlayerCanHearPlayersVoice(listener, speaker)
   --  return ( listener:GetPos() :Distance ( speaker:GetPos() ) < 200
 --end
+
+function GM:OnNPCKilled(npc, attacker, inflictor)
+    -- add money
+    -- add exp and check for lvl up
+    attacker:SetNWInt ("playerMoney", attacker:GetNWInt("playerMoney") + 100)
+
+end
+
+function GM:PlayerDeath(victim, inflictor, attacker)
+    
+
+    attacker:SetNWInt ("playerMoney", attacker:GetNWInt("playerMoney") + 100)
