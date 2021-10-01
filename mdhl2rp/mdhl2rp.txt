@@ -1,6 +1,6 @@
 "mdhl2rp"
 {
-	"base"		"Drob and Mint HL2RP"
+	"base"		"Drob and Minty HL2RP"
 	"title"		"Custom HL2RP"
 	"author"	"Drob and Mint"
 	"category"	"rp"
