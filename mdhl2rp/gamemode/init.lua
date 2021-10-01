@@ -2,6 +2,11 @@ AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 AddCSLuaFile("hud.lua")
 
+function GM:PlayerinitialSpawn(ply)
+    if(ply:GetNWInt("plyLvl") <=0) then
+        ply:SetNWint("playLvl", 1)
+    end
+end
 include("shared.lua")
 
 function GM:PlayerSpawn(ply)
@@ -40,9 +45,16 @@ function GM:OnNPCKilled(npc, attacker, inflictor)
     -- add exp and check for lvl up
     attacker:SetNWInt ("playerMoney", attacker:GetNWInt("playerMoney") + 100)
 
+
+    attacker:SetNWint("playerExp", attacker:GetNWInt) + 100)
+    attacker:SetNWInt("plaerLvl", attacker:GetNWInt) +1)
 end
 
 function GM:PlayerDeath(victim, inflictor, attacker)
     
 
     attacker:SetNWInt ("playerMoney", attacker:GetNWInt("playerMoney") + 100)
+
+    attacker:SetNWint("playerExp", attacker:GetNWInt("playerExp") +100)
+    attacker:SetNWint("playeLvl") attacker:GetNWInt(playerLvL) + 1)
+end
