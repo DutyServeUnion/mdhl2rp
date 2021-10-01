@@ -16,3 +16,21 @@ if(string.sub( text, 1 , 4) == "/ooc") then
     end
 
 end)
+function GM:PlayerCanSeePlayersChat( text , teamOnly, listener , speaker)
+    local dist = listener:GetPos() :Distance ( speaker:GetPos() )
+
+    if ( dist <= 200 ) then
+            print ("People are able to listen")
+        return true 
+    end
+    print("People cannot listen")
+    return false 
+
+
+end
+
+-- this entire part is just if you want to enable VCs.
+
+--function GM:PlayerCanHearPlayersVoice(listener, speaker)
+  --  return ( listener:GetPos() :Distance ( speaker:GetPos() ) < 200
+--end
