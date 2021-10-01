@@ -9,6 +9,10 @@ net.Receive("F4Menu", function()
         Menu:SetDraggable(true)
         Menu:ShowCloseButton(false)
         Menu:SetDeleteOnClose(false)
+        Menu.Paint = function()
+            surface.SetDrawColor(60, 60, 60, 255)
+            surface.DrawRect(0, 0, Menu:GetWide(), Menu:GetTall())
+        end
     end
 
     if (net.ReadBit() == 0) then
