@@ -47,11 +47,3 @@ function HideHud(name)
 end
 hook.Add("HUDShouldDraw", "HideDefaultHud", HideHud)
 
-
-local function DrawPlayerModel()
-		PlayerIcon = vgui.Create("SpawnIcon")
-		PlayerIcon:SetPos( 25, ScrH() - 75 )
-		PlayerIcon:SetSize(60, 60)
-		PlayerIcon:SetToolTip("")
-		PlayerIcon:SetModel(LocalPlayer():GetModel())
-end
