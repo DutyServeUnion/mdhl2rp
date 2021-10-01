@@ -46,3 +46,11 @@ function GM:PlayerDeath(victim, inflictor, attacker)
     
 
     attacker:SetNWInt ("playerMoney", attacker:GetNWInt("playerMoney") + 100)
+
+end
+
+util.AddNetworkString("F4Menu")
+function GM:ShowSpare2(ply)
+    net.Start("F4Menu")
+    net.Broadcast()
+end
