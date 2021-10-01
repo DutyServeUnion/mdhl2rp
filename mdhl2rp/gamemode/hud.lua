@@ -28,6 +28,10 @@ function hud()
     else
         draw.SimpleText("Ammo: " .. client:GetAmmoCount(client:GetActiveWeapon():GetPrimaryAmmoType()), "DermaDefaultBold", 260, ScrH() - 40, Color(255, 255, 255), 0, 0)
     end
+
+    if (client:GetAmmoCount(client:GetActiveWeapon():GetSecondaryAmmoType()) > 0 then
+        draw.SimpleText("Secondary: " .. client:GetAmmoCount(client:GetActiveWeapon():GetSecondaryAmmoType()), "DermaDefaultBold", 260m ScrH() - 25, Color(255, 255, 255, 255), 0, 0)
+    end
 end
 hook.Add("HUDPaint", "TestHud", hud)
 
