@@ -11,3 +11,8 @@ function GM:PlayerSpawn(ply)
     ply:Give("gmod_tool")
     ply:SetupHands()
 end
+if(string.sub( text, 1 , 4) == "/ooc") then
+    return "(OOC)" .. string.sub( text, 5)
+    end
+
+end)
