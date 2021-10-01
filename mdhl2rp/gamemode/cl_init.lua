@@ -1,4 +1,9 @@
-GM.Name = "Minty and Drobcho's HL2RP Gamemode"
-GM.Author = "Minty and Drobcho"
+include("shared.lua")
+include("hud.lua")
 
-DeriveGamemode("sandboxrp")
+Hook.Add("OnPlayerChat", "UNIQUEIDENT" , function( ply, atr , bteam, bdead))
+
+  if (str = "/print") then
+    print("HEYYYY")
+    return true
+  end 
