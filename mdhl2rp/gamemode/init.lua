@@ -55,6 +55,15 @@ function GM:PlayerDeath(victim, inflictor, attacker)
 
     attacker:SetNWInt ("playerMoney", attacker:GetNWInt("playerMoney") + 100)
 
+<<<<<<< HEAD
     attacker:SetNWint("playerExp", attacker:GetNWInt("playerExp") +100)
     attacker:SetNWint("playeLvl") attacker:GetNWInt(playerLvL) + 1)
+=======
+end
+
+util.AddNetworkString("F4Menu")
+function GM:ShowSpare2(ply)
+    net.Start("F4Menu")
+    net.Broadcast()
+>>>>>>> cfe84171e1f586b479d14629c947dc329c68b42f
 end

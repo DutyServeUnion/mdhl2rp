@@ -5,6 +5,8 @@ GM.Website = "N/A"
 
 DeriveGamemode("sandbox")
 
+include("f4menu.lua")
+
 function GM:Initialize()
     -- Add any code if you want anything to be added on spawn
 end
