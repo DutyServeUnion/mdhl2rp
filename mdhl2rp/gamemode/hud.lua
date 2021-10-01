@@ -34,6 +34,7 @@ function hud()
     end
 
     draw.RoundedBox(0, 0, ScrH() - 145, 250, 40, Color(30, 30, 30, 230))
+    draw.SimpleText("XP: " .. "CURXP" .. "/", "DermaDefaultBold", 10, ScrH() - 125, Color(255, 255, 255, 255), 0)
 
 end
 hook.Add("HUDPaint", "TestHud", hud)
