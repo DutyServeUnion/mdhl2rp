@@ -35,6 +35,10 @@ function hud()
 
     draw.RoundedBox(0, 0, ScrH() - 145, 250, 40, Color(30, 30, 30, 230))
     draw.SimpleText("XP: " .."CURXP" .."/" .. "MINTOXP", "DermaDefaultBold", 10, ScrH() - 125, Color(255, 255, 255, 255), 0)
+
+    draw.RoundedBox(0, 225, ScrH() - 100, 125, 25, Color(30, 30, 30, 230))
+    draw.SimpleText("$ " .. ,client:GetNWInt("playerMoney"),  "DermaDefaultBold", 260, ScrH() - 95, Color(225, 255, 255), 0)
+
 end
 hook.Add("HUDPaint", "TestHud", hud)
 
