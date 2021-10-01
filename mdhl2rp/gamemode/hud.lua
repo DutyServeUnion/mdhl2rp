@@ -33,6 +33,18 @@ function hud()
         draw.SimpleText("Secondary: " .. client:GetAmmoCount(client:GetActiveWeapon():GetSecondaryAmmoType()), "DermaDefaultBold", 260, ScrH() - 25, Color(255, 255, 255, 255), 0, 0)
     end
 
+<<<<<<< HEAD
+    local expToLevel = (client:GetNWInt("playerLvl") * 100) *2
+ 
+    draw.RoundedBox(0, 0, ScrH() - 145, 250, 40, Color(30, 30, 30, 230))
+    draw.SimpleText("Level" .. client:GetNWInt("playerLvl") "DermaDefaultBold", 10, ScrH() - 140, Color(225, 255, 255, 255), 0)
+    draw.SimpleText("XP: " ..client:GetNWInt("playerExp") .."/" .. expToLevel, "DermaDefaultBold", 10, ScrH() - 125, Color(255, 255, 255, 255), 0)
+
+    draw.RoundedBox(0, 225, ScrH() - 100, 125, 25, Color(30, 30, 30, 230))
+    draw.SimpleText("$ " .. ,client:GetNWInt("playerMoney"),  "DermaDefaultBold", 260, ScrH() - 95, Color(225, 255, 255), 0)
+
+=======
+>>>>>>> cfe84171e1f586b479d14629c947dc329c68b42f
 end
 hook.Add("HUDPaint", "TestHud", hud)
 
