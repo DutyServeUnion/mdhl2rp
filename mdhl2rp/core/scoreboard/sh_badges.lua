@@ -6,27 +6,29 @@
 
 landis.Badges = {}
 
+local 
+
 local devs = {
-	["STEAM_0:1:92733650"] = true -- nick
+	["STEAM_0:1:513516857"] = true -- minty
 }
 
 local testers = {
-	["STEAM_0:1:92733650"] = true, -- nick
-	["STEAM_0:1:513014903"] = true, -- creamy
-	["STEAM_0:1:545592128"] = true, -- henry
-	["STEAM_0:1:94748887"] = true, -- Swift
-	["STEAM_0:1:96085036"] = true -- Jacub
+	["INSERT STEAMID"] = true, 
+	["INSERT STEAMID"] = true, 
+	["INSERT STEAMID"] = true, 
+	["INSERT STEAMID"] = true,
+	["INSERT STEAMID"] = true 
 }
 
 local smilers = {
-	["STEAM_0:1:92733650"] = true, -- nick
-	["STEAM_0:1:94748887"] = true  -- idiot swift
+	["INSERT STEAMID"] = true, -- nick
+	["INSERT STEAMID"] = true  -- idiot swift
 }
 
 landis.Badges.Data = {
 	{
 		icon = "icon16/cog.png",
-		desc = "This user is a landis developer.",
+		desc = "This user is a developer",
 		userTest = function(ply)
 			return devs[ply:SteamID()]
 		end
