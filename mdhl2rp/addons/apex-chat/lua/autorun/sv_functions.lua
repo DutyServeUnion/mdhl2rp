@@ -1,4 +1,0 @@
-
-
-
--- use chat.AddText() syntax
