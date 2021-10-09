@@ -3,6 +3,6 @@
 	"base"		"Drob and Mint HL2RP"
 	"title"		"Custom HL2RP"
 	"author"	"Drob and Mint"
-	"category"	"rp"
+	"category"	"^rp"
 	"menusystem" "1"
 }
