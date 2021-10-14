@@ -43,7 +43,7 @@ function addButtons(Menu)
         surface.DrawRect(0, 49, button:GetWide(), 1)
         surface.DrawRect(99, 0, 1, button:GetTall())
 
-        draw.DrawText("Jobs", "DermaDefaultBold", button:GetWide() / 2, 17, Color(255,255,255, 255), 1)
+        draw.DrawText("Whitelists", "DermaDefaultBold", button:GetWide() / 2, 17, Color(255,255,255, 255), 1)
     end
 
     local button2 = vgui.Create("DButton")
