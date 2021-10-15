@@ -10,6 +10,9 @@ include("f4menu.lua")
 function GM:Initialize()
     -- Add any code if you want anything to be added on spawn
 end
+landis = landis or {}
+landis.lib = landis.lib or {}
+
 // fallback configurations
 mint.Config =  {}
 mint.Config.MainColor        = Color( 10,  132, 255 )
