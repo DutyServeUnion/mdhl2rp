@@ -1,3 +1,2 @@
 # mdhl2rp
-A Custom HL2RP Gamemode
-(Work in progress)
+Completely useless as of now used this to learn some LUA
